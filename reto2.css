@@ -842,10 +842,10 @@ opacity: 0.8;
 
 #menures{
 	list-style: none;
-	border-radius: 30px;
+	border-radius: 33px;
 	display: flex;
 	flex-direction: column;
-	font-size: 18px;
+	font-size: 25px;
     font-weight: 500;
     font-family: Mukta , sans-serif;
     align-items: center;
