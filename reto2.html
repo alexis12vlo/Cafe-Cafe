@@ -8,30 +8,31 @@
 	<link rel="stylesheet" type="text/css" href="reto2.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap" rel="stylesheet">
+<script type="text/javascript" src="reto2.js"></script>
 	<title>Coffe cafe - Reto</title>
 </head>
 <body>
-	<div class="container1">
-		<div class="back">
+	<div class="container1" id="container1">
+		<div class="back"  >
 
-		<div class="haderback">
-			<div class="hader">
+		<div id="hader1" class="haderback">
+			<div id="hader2" class="hader">
 				<div class="logo">
-					<a><i class="fas fa-coffee"></i> Cafe Cafe</a>
+					<a id="logo2"><i class="fas fa-coffee"></i> Cafe Cafe</a>
 				</div>
 					<ul id="menu">
-					<li><a href="">Casa</a></li>
-					<li><a href="">Acerca De</a></li>
-					<li><a href="">Nuestros Cafes</a>
+					<li><a id="a" href="">Casa</a></li>
+					<li><a  id="a2" href="">Acerca De</a></li>
+					<li><a id="a3"  href="">Nuestros Cafes</a>
 						</li>
-					<li><a href="">Paginas ▼ </a>
+					<li><a id="a5" href="">Paginas ▼ </a>
 						<ul>
-						<li><a href="">Publicaciones De Blog</a></li>
-              			<li><a href="">404 Pagina</a></li>
-              			<li><a href="">Pagina De Destino</a>
+						<li><a id="a2"  href="">Publicaciones De Blog</a></li>
+              			<li><a id="a2"  href="">404 Pagina</a></li>
+              			<li><a id="a2"  href="">Pagina De Destino</a>
 						</ul>
 					</li>
-					<li><a href="">Contacto</a></li>
+					<li><a id="a4"  href="">Contacto</a></li>
 					</ul>
 			
 				<div class="compraahora">
@@ -66,10 +67,10 @@
 					<li><a href="">Contacto</a></li>
 					</ul>
 					</div>
-
-
 		
-	    <div class="container1con">
+
+		<div class="containerdes" style="position: relative;" >
+	    <div class="container1con fade" style="display: block;">
 	    	<div class="container1contitulo">
 	    		<h1>Marcas de Cafe de Elite</h1>
 	    		
@@ -78,35 +79,71 @@
 	    		<p>Coffee Shop es el lugar donde puede obtener deliciosas variedades de café de marcas y tostadores de élite mundial a un precio muy asequible. Lorem, ipsum dolor, sit amet.</p>
 	    	</div>
 	    	<div class="container1conbutton">
-	    		<button>Lee mas</button>
+	    		<button  id="botoncambio" >Lee mas</button>
 	    	</div>
+	    	<!-- Next and previous buttons -->
+  
 	    	
 	    </div>
+	     <div class="container1con fade" style="display: none;">
+	    	<div class="container1contitulo">
+	    		<h1>Cafe Caliente y Sabroso</h1>
+	    		
+	    	</div>
+	    	<div class="container1conp">
+	    		<p>Coffee Shop es el lugar donde puede obtener deliciosas variedades de café de marcas y tostadores de élite mundial a un precio muy asequible. Lorem, ipsum dolor, sit amet.</p>
+	    	</div>
+	    	<div class="container1conbutton">
+	    		<button  id="botoncambio" onclick=cambiar();>Lee mas</button>
+	    	</div>
+	    	<!-- Next and previous buttons -->
+  
+	    	
 	    </div>
+	     <div class="container1con fade" style="display: none;">
+	    	<div class="container1contitulo">
+	    		<h1>Aficionados al cafe dedicados</h1>
+	    		
+	    	</div>
+	    	<div class="container1conp">
+	    		<p>Coffee Shop es el lugar donde puede obtener deliciosas variedades de café de marcas y tostadores de élite mundial a un precio muy asequible. Lorem, ipsum dolor, sit amet.</p>
+	    	</div>
+	    	<div class="container1conbutton">
+	    		<button  id="botoncambio" onclick=cambiar();>Lee mas</button>
+	    	</div>
+	    	<!-- Next and previous buttons -->
+  
+	    	
 	    </div>
-
-	    <script>
-	function mostrar() {
-		document.getElementById("menures1").style.display ='flex';
-		document.getElementById("menuicon").style.display ='none';
-		document.getElementById("menuicon2").style.display ='flex';
+	    <div class="container1con fade" style="display: none;">
+	    	<div class="container1contitulo">
+	    		<h1>Celebres las marcas de cafe</h1>
+	    		
+	    	</div>
+	    	<div class="container1conp">
+	    		<p>Coffee Shop es el lugar donde puede obtener deliciosas variedades de café de marcas y tostadores de élite mundial a un precio muy asequible. Lorem, ipsum dolor, sit amet.</p>
+	    	</div>
+	    	<div class="container1conbutton">
+	    		<button  id="botoncambio" onclick=cambiar();>Lee mas</button>
+	    	</div>
+	    	<!-- Next and previous buttons -->
+  
+	    	
+	    </div>
+		</div>
+      
 
 	
+		<div class="puntos" style="text-align:center">
+ 		 <span class="dot" onclick="currentSlide(1),cambiar1()";></span> 
+ 		 <span class="dot" onclick="currentSlide(2),cambiar2()";></span> 
+ 		 <span class="dot" onclick="currentSlide(3),cambiar3()"></span> 
+ 		 <span class="dot"  onclick="currentSlide(4),cambiar4()"></span> 
+		</div>
+		</div>
+		</div>
+</div>
 
-	}
-	document.getElementById("menuicon").onclick=function(){
-		mostrar();
-	}
-	function ocultar() {
-		document.getElementById("menures1").style.display ='none';
-		document.getElementById("menuicon").style.display ='flex';
-		document.getElementById("menuicon2").style.display ='none';	
-	}
-	document.getElementById("menuicon2").onclick=function(){
-		ocultar();
-	}
-</script>
-	
 	    <div class="container2">
 	    	<div class="container2con">
 	    		<h3>LO MEJOR PARA TI</h3>
@@ -295,6 +332,10 @@
 			<button class="fa fa-instagram"></button>
 			</div>
 		</div>
+
+
+ 
+  
 		<footer id="foter">
 			<div class="foter">
 			<div class="fotercon">
@@ -321,5 +362,6 @@
 			<p id="p">© 2021 Coffee Cafe Todos los derechos reservados | Tema de WordPress por W3Layouts.</p>
 		  
 		</footer>
+
 </body>
 </html>
